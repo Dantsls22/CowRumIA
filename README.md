@@ -95,7 +95,7 @@ Audio files: WAV · mono · 48,000 Hz · 16-bit PCM · ~3 seconds per clip
 ---
 
 ## Setup
-
+# Tested on Python 3.12.10 · Windows x86_64
 ```bash
 pip install -r model/requirements.txt
 python model/train_model.py
