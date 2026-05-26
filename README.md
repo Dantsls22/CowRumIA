@@ -33,27 +33,40 @@ CowRumIA is a system for classifying bovine vocalizations into four behavioral c
 ## Repository Structure
 
 ```
-cowrumia/
-├── model/
+cowrumia/                          ← raíz del repo
+│
+├── README.md
+│
+├── model/                         ← todo lo de Python/entrenamiento
 │   ├── cow_rumia_train_v2.py
 │   ├── cow_rumia_tflite_convert.py
 │   └── requirements.txt
-├── app/
-│   ├── lib/
-│   │   ├── services/
-│   │   │   ├── classifier_service.dart
-│   │   │   └── audio_recorder_service.dart
-│   │   ├── screens/
-│   │   │   ├── home_screen.dart
-│   │   │   └── result_screen.dart
-│   │   └── main.dart
-│   ├── assets/
-│   │   └── models/
-│   │       ├── yamnet_embeddings.tflite
-│   │       ├── cowrumia_dense.tflite
-│   │       └── labels.txt
-│   └── pubspec.yaml
-└── README.md
+│
+└── app/                           ← todo lo de Flutter
+    ├── pubspec.yaml
+    ├── assets/
+    │   └── models/
+    │       ├── yamnet_embeddings.tflite
+    │       ├── cowrumia_dense.tflite
+    │       └── labels.txt
+    └── lib/
+        ├── main.dart
+        ├── models/
+        │   └── recording_result.dart
+        ├── screens/
+        │   ├── home_screen.dart
+        │   ├── result_screen.dart
+        │   ├── history_screen.dart
+        │   └── settings_screen.dart
+        ├── services/
+        │   ├── classifier_service.dart
+        │   ├── audio_recorder_service.dart
+        │   └── history_service.dart
+        ├── theme/
+        │   └── app_theme.dart
+        └── widgets/
+            ├── cow_type_card.dart
+            └── record_button.dart
 ```
 
 ---
