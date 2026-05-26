@@ -1,0 +1,51 @@
+name: cow_rumia
+description: Detección de estrés bovino mediante análisis de audio con CNN.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Grabación de audio
+  record: ^6.2.0
+
+  # Almacenamiento local
+  shared_preferences: ^2.2.2
+  path_provider: ^2.1.2
+
+  # Modelo TFLite
+  tflite_flutter: ^0.12.1
+
+  # Procesamiento de audio
+  fftea: ^1.2.0
+
+  # Permisos
+  permission_handler: ^12.0.1
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: "^0.13.1"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/models/yamnet_embeddings.tflite
+    - assets/models/cowrumia_dense.tflite
+    - assets/models/labels.txt
+    - assets/models/cowrumia_yamnet_encoder.pkl
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_background: "#0B1E3B" # El azul oscuro de tu logo
+  adaptive_icon_foreground: "assets/icon/icon.png"
