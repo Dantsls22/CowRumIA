@@ -1,0 +1,12 @@
+# CowRumIA — Training and conversion dependencies
+# Tested with Python 3.12.10 on Windows x86_64
+# Models were generated with these exact versions — use them for reproducibility
+
+tensorflow==2.21.0
+tensorflow-hub==0.16.1
+librosa==0.11.0
+numpy==2.4.4
+scikit-learn==1.8.0
+joblib==1.5.3
+matplotlib==3.10.8
+seaborn==0.13.2
