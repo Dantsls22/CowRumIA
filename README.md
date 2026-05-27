@@ -108,7 +108,7 @@ Confidence threshold: **58%**
 
 The bovine vocalization corpus is available on Zenodo:
 
-> Tena Salas, D. A. (2026). *CowRumIA Bovine Vocalization Dataset* [Data set]. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX
+> Tena Salas, D. A. (2026). *CowRumIA Bovine Vocalization Dataset* [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20406266
 
 Audio files: WAV · mono · 48,000 Hz · 16-bit PCM · ~3 seconds per clip
 
